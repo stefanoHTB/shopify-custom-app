@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "chat"
+client_id = "6fc1c91c572702b71c81a068bf035885"
+application_url = "https://shareware-laboratories-yield-constitutes.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://shareware-laboratories-yield-constitutes.trycloudflare.com/auth/callback",
+  "https://shareware-laboratories-yield-constitutes.trycloudflare.com/auth/shopify/callback",
+  "https://shareware-laboratories-yield-constitutes.trycloudflare.com/api/auth/callback",
+  "https://shareware-laboratories-yield-constitutes.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "oroa-development.myshopify.com"
